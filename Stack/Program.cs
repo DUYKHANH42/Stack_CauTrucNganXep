@@ -11,7 +11,7 @@ namespace Stack
         static void Main(string[] args)
         {
             Stack stack = new Stack(32);
-            Console.WriteLine("Cho biet so nguyen N (he 10): ");
+            Console.WriteLine("Cho biết số nguyên N (hệ 10): ");
             int n = int.Parse(Console.ReadLine());
             int so = n;
             while(n>0)
@@ -25,7 +25,7 @@ namespace Stack
                kq+= stack.Pop();
             }
 
-            Console.WriteLine($"So nguyen {so} (he 10) la: {kq} (he 2) ") ;
+            Console.WriteLine($"Số nguyên {so} (hệ 10) là: {kq} (hệ 2) ") ;
             Console.ReadLine();
         }
     }

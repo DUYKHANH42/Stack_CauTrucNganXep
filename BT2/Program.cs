@@ -13,12 +13,12 @@ namespace BT2
             do
             {
                 // Nhập số nguyên N ở hệ 10
-                Console.WriteLine("Nhap so nguyen N (he 10): ");
+                Console.WriteLine("Nhập số nguyên N (hệ 10): ");
                 int n = int.Parse(Console.ReadLine());
                 int so = n; // Lưu lại giá trị ban đầu của N
 
                 // Nhập hệ cơ số cần chuyển đổi (2, 8, 16)
-                Console.WriteLine("Nhap he so X can chuyen doi (2, 8, 16): ");
+                Console.WriteLine("Nhập hệ số X cần chuyển đổi (2, 8, 16): ");
                 int x = int.Parse(Console.ReadLine());
 
                 // Kiểm tra nếu hệ cơ số hợp lệ
@@ -33,7 +33,7 @@ namespace BT2
                 }
                 else
                 {
-                    Console.WriteLine("He so khong hop le");
+                    Console.WriteLine("Hệ số không hợp lệ!");
                     return; // Thoát chương trình nếu hệ số không hợp lệ
                 }
 
@@ -56,10 +56,10 @@ namespace BT2
                 }
 
                 // In kết quả
-                Console.WriteLine($"So {so} chuyen sang he {x} la: {kq}");
+                Console.WriteLine($"Số {so} chuyển sang hệ {x} là: {kq}");
 
                 // Hỏi người dùng có tiếp tục không
-                Console.WriteLine("Tiep tuc khong? (Y/N)");
+                Console.WriteLine("Tiếp tục không? (Y/N)");
                 choice = Console.ReadLine();
             } while (choice.ToUpper() == "Y"); // Lặp lại nếu người dùng nhập "Y"
 
