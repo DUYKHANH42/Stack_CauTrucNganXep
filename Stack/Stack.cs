@@ -28,7 +28,7 @@ namespace Stack
         {
             if (top == data.Length - 1)
             {
-                Console.WriteLine("Stack is full");
+                Console.WriteLine("Stack đã đầy!");
                 return true;
             }
             return false;
@@ -42,7 +42,7 @@ namespace Stack
             }
             else
             {
-                Console.WriteLine("Stack is full");
+                Console.WriteLine("Stack đã đầy!");
             }
         }
         public int Pop()
